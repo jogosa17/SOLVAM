@@ -1,0 +1,606 @@
+*{
+    /* para que el html (la web) ocupe todo el screen: probar */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    /* trabajamos imagen de la chica: tamaño, transparencia y ajuste a la pantalla */
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(251, 194, 235, 0.486) 0%, hsla(218, 68%, 79%, 0.514) 100%), url(../img/fondoperrogato.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+body{
+    /* se aplica a todo el body del html */
+    font-family: Brush Script MT;
+    color: #000000;
+    font-size: large;
+    background-color: white;
+}
+
+
+
+.contenedor{
+    /* se aplica a todos los contenedores, como el de cabecera contenedor.head: mirar a continuación */
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+
+}
+
+.texto{
+
+}
+
+.head{
+    /* en concreto el de cabecera contenerdor.head debe estar en columnas centrado y con ese color de texto */
+    /* aunque luego definamos las carecterísticas concretas de la clase titulo (h1) y copy (p) */
+    padding: 10px;
+    height: 100%; /* alineación vertical en screen: probar */
+    display: flex;
+    flex-direction: column;
+    justify-content: up;
+    text-align: Up-left;
+    color: #FFDE00;
+
+    
+}
+
+.cabecera{
+    font-size: 20px;
+    font-family: Eras ITC;
+    margin-bottom: 2px;
+    padding: 30px;
+    text-align: center;
+
+}
+
+.titulo{
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+
+
+.copy{
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+}
+
+.texto{
+
+}
+
+.hamburguer{
+    position: fixed; 
+    top: 60px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 0px;
+    }
+
+.menu-navegacion {
+
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgba(255, 250, 250, 0.592);
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    
+
+  }
+  
+  .menu-navegacion a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #4e2e06;
+    display: block;
+    transition: 0.3s;
+
+  }
+  
+  .menu-navegacion a:hover {
+    color: darkorange;
+  }
+  
+  .menu-navegacion .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #main {
+    transition: margin-left 1s;
+    padding: 0px;
+  }
+
+  .img-perrogato{
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    padding-top: 30px;
+}
+.container-form{
+    padding-bottom: 100px;
+    text-align: center;
+}
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+
+.spread{ /* Se usará para Js */
+    transform: translateX(0); */traslación=0; aparece!*/
+}
+
+
+
+/* Hasta aquí el header */
+/* Hasta aquí el header */
+/* Services */
+
+.subtitulo{
+    color: #4e2e06;
+    font-size: 60px;
+    font-family: "Bauhaus 93";
+    text-align: right;
+    margin-bottom: 10px 10px;
+    background: #ffffff;
+    text-decoration: underline darkorange;
+        margin-right: 80px;
+
+}
+
+.contenedor-servicio{
+    display: flex; /*La propiedad CSS flex es una propiedad resumida que indica la capacidad de un elemento flexible para alterar sus dimensiones y llenar el espacio disponible.*/
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #ffffff;
+    font-family: Cambria;
+}
+
+.contenedor-servicio img{
+    width: 20%;
+
+}
+
+.contenedor-idioma {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.img-idioma {
+    width: 50px;
+    float: inherit;
+}
+
+.img-idioma:hover {
+    filter: brightness(70%);
+    width: 60px;
+}
+
+.checklist-servicio{
+    width: 45%;
+    text-align: left;
+    
+}
+
+.service{
+    margin-bottom: 20px;
+}
+
+.n-service{
+    margin-bottom: 7px;
+    color: #FF0000;
+}
+
+.number{
+    display: inline-block;
+    /* fichero externo CSS */
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 5px;
+    width: 35px;
+    height: 30px;
+    color: #FFF300;
+    font-weight: 700;
+}
+
+/* Hasta aquí servicios */
+/* Hasta aquí servicios */
+
+.gallery{
+    background: #ffffff;
+}
+
+.contenedor-galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 30px; 
+}
+
+.img-galeria{
+    width: 30%;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+/* Hasta aquí Servicios */
+
+/* Ahora el CSS para el efecto Js sobre la imagen */
+
+
+.imagen-light{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.534);
+    transform: translate(100%);
+    transition: transform .2s ease-in-out;
+}
+
+.agregar-imagen{
+    width: 60%;
+    transform: scale(0);
+    border-radius: 10px;
+    transition: transform .3s .2s;
+}
+
+.showImage{
+    transform: scale(1);
+}
+
+.show{
+    transform: translate(0);
+}
+
+.close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    cursor: pointer;
+}
+
+/* Fin del CSS para el efecto Js sobre la imagen */
+/* Ahora el CSS para la sección Expertos */
+.enlaces-interes{
+    /*La propiedad CSS flex es una propiedad resumida que indica la capacidad de un elemento flexible para alterar sus dimensiones y llenar el espacio disponible.*/
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background: #ffffff;
+    font-family: Cambria;
+    margin-bottom: 50px;
+}
+.img-enlaces-interes{
+    margin-left: 10px;
+    margin-top: 30px;
+    margin-block: 20px;
+    margin: 30px;
+
+
+}
+.image-size{
+    width: 17%;
+    height: 100px;
+
+}
+.cont-expert{
+    width: 30%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.cont-expert img{
+    display: inline-block;
+    margin: auto;
+    width: 100%;
+}
+
+.n-expert{
+    width: 50%;
+    display: inline-flex;
+    margin-top: 20px;
+    font-weight: 400;
+    color: #0040ff;
+}
+
+/* Ahora el CSS para el footer */
+
+footer{
+    background: darkorange;
+
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px  	
+	
+}
+
+
+.contact-us{
+    width: 40%;
+    color: #fff;
+}
+
+.brand{
+    font-weight: 50;
+    font-size: 40px;
+}
+
+.brand+p{
+    font-weight: 500;
+}
+
+.social-media{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px
+}
+
+.social-media-icon{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #ffffff;
+}
+.modepran-icon{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #ffffff;
+}
+
+.social-media-icon i{
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.line{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    height: 2px;
+    background: #f56905;
+    margin-bottom: 60px;
+}
+.languages{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+.social-media-icon:hover{
+    background: #fff;
+    color:#4e2e06;
+}
+
+.en ,.fr{
+    display: none;
+}
+
+.img-perrogatoregistro{
+    width: 200px;
+    height: 100px;
+    text-align: right;
+
+
+
+}
+.textoregistro{
+    display: block;
+    margin-left: 10px;
+    width: 60px;
+    height: 60px;
+    font-family: "Bauhaus 93";
+
+
+}
+.container-perrogatoregistro{
+
+    display: block;
+    text-align: right;
+    padding: 60px 30px 0px 0px;
+
+}
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+body-registrar-mascota {
+    align-items: center;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+}
+
+.form {
+    background-color: transparent;
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 200px;
+    margin-left: 10px;
+    padding: 20px;
+    width: 200px;
+}
+
+.title {
+    color: black;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.subtitle {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 60;
+    margin-top: 10px;
+}
+
+.input-container {
+    height: 50px;
+    position: relative;
+    width: 100%;
+}
+
+.ic1 {
+    margin-top: 10px;
+}
+
+.ic2 {
+    margin-top: 10px;
+}
+
+.input {
+    background-color: #303245;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 50%;
+    outline: 0;
+    padding: 10px 0px ;
+    width: 100%;
+}
+
+.cut {
+    background-color: transparent;
+    border-radius: 10px;
+    height: 20px;
+    left: 20px;
+    position: absolute;
+    top: -20px;
+    transform: translateY(0);
+    transition: transform 200ms;
+    width: 10px
+}
+
+.cut-short {
+    width: 50px;
+}
+
+.input:focus ~ .cut,
+.input:not(:placeholder-shown) ~ .cut {
+    transform: translateY(8px);
+}
+
+.placeholder {
+    color: white;
+    font-family: sans-serif;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+}
+
+.input:focus ~ .placeholder,
+.input:not(:placeholder-shown) ~ .placeholder {
+    transform: translateY(-20px) translateX(100px) scale(0.75);
+}
+
+.input:not(:placeholder-shown) ~ .placeholder {
+    color: #808097;
+}
+
+.input:focus ~ .placeholder {
+    color: darkorange;
+}
+
+.submit {
+    background-color: #4e2e06;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 38px;
+// outline: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.submit:active {
+    background-color: darkorange;
+}

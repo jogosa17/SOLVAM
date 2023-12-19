@@ -1,0 +1,173 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>RSIAC - Red Solvam de Identificación de Animales de Compañía</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header" id="inicio">
+        <div class="es cabecera">
+            <h1>¡Ayúdame a volver a casa!</h1>
+            <center><img style="" class="img-perrogato" src="img/perrogato.jpg" alt=""></center>
+        </div>
+        <div class="en cabecera">
+            <h1><center>Help me to go back home!</center></h1>
+
+            <center><img style="" class="img-perrogato" src="img/perrogato.jpg" alt=""></center>
+        </div>
+        <div class="fr cabecera">
+            <h1>HAS ENCONTRADO UN GATO PERDIDO</h1>
+
+           <img style="" class="img-perrogato" src="img/perrogato.jpg" alt="">
+        </div>
+        <div class="container-form">
+            <form action="consulta.php" method="get" name="nombredueño">
+                <div class="es texto">
+                <input type='text' name='nombredueño' placeholder="Introduzca nombre de la mascota y pulse INTRO"/>
+                <input type='submit' value='Buscar'/>
+                </div>
+                <div class="en texto">
+                    <input type='text' name='nombre' placeholder="Insert the pet name and press ENTER"/>
+                    <input type='submit' value='Search'/>
+                </div>
+                <div class="fr texto">
+                    <input type='text' name='nombre' placeholder="Entrez le nom de la mascotte et appuyez sur ENTER"/>
+                    <input type='submit' value='Chercher'/>
+                </div>
+            </form>
+        </div>
+    <img style="" class="hamburguer" src="img/huella.png" alt="" onclick="openNav()">
+    <nav id="myMenu" class="menu-navegacion">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="es">
+            <a href="#inicio">Inicio</a>
+            <a href="#subtitulo">¿Qué es RSIAC?</a>
+            <a href="#enlaces-interes">Enlaces de interés</a>
+            <a href="#footer">Contacto</a>
+        </div>
+
+        <div class="en">
+            <a href="#inicio">Menu</a>
+            <a href="#subtitulo">What is RSIAC?</a>
+            <a href="#enlaces-interes">Links of interest</a>
+            <a href="#footer">Contact</a>
+        </div>
+
+        <div class="fr">
+            <a href="#inicio">Accueil</a>
+            <a href="#subtitulo">Qu’est-ce que le RSIAC?</a>
+            <a href="#enlaces-interes">Liens d'intérêt</a>
+            <a href="#footer">Contact</a>
+        </div>
+
+        <div class="contenedor-idioma">
+            <img class="img-idioma" onclick="changeLenguaje('es')" src="img/esp_band.png" alt="idioma español">
+            <img class="img-idioma" onclick="changeLenguaje('en')" src="img/eng_band.png" alt="idioma inglés">
+            <img class="img-idioma" onclick="changeLenguaje('fr')" src="img/fr_band.png" alt="idioma francés">
+        </div>
+    </nav>
+</header>
+<main id="main">
+    <section class="services contenedor" id="subtitulo">
+        <h2 class="es subtitulo">¿Qué es RSIAC?</h2>
+        <h2 class="en subtitulo">What is RSIAC?</h2>
+        <h2 class="fr subtitulo">Que est RSIAC?</h2>
+        <div class="contenedor-servicio">
+            <img src="img\Thai2.png" alt="">
+            <!-- es -->
+            <div class="es checklist-servicio">
+                <div class="service">
+                    <p> RSIAC es la Red Solvam de Identificación de Animales de Compañía. Es una asociación sin ánimo de lucro de las bases de datos de España.<br>
+                    <br>El fin esencial de esta Asociación es la creación, desarrollo, gestión y control de una red informática nacional que facilite
+                        la interconexión de las distintas bases de datos de animales de compañía existentes en España
+                        y la interconexión de estas con las redes nacionales existentes en otros países,
+                        todo ello con el objeto de procurar la recuperación de animales de compañía.</p>
+                </div>
+            </div>
+            <!-- en -->
+            <div class="en checklist-servicio">
+                <div class="service">
+                    <p> RSIAC is the Solvam Network for the Identification of Pet Animals. It is a non-profit association of
+                        databases of the 17 Autonomous Communities
+                        and the 2 Autonomous cities of Spain.
+
+                        The essential purpose of this Association is the creation, development, management and control of a national computer network that facilitates
+                        the interconnection of the different databases of pets existing in the Spanish Autonomous Communities,
+                        and the interconnection of these with existing national networks in other countries,
+                        all this with the aim of seeking the recovery of pets</p>
+                </div>
+            </div>
+            <!-- fr -->
+            <div class="fr checklist-servicio">
+                <div class="service">
+                    <p> RSIAC est le réseau Solvam pour l'identification des animaux de compagnie. Il s'agit d'une association à but non lucratif
+                        bases de données des 17 communautés autonomes
+                        et les 2 villes autonomes d'Espagne.
+
+                        L'objectif essentiel de cette Association est la création, le développement, la gestion et le contrôle d'un réseau informatique national qui facilite
+                        l'interconnexion des différentes bases de données sur les animaux de compagnie existantes dans les communautés autonomes espagnoles,
+                        et l'interconnexion de ceux-ci avec les réseaux nationaux existants dans d'autres pays,
+                        tout cela dans le but de rechercher le rétablissement des animaux de compagnie</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="enlaces-interes" id="enlaces-interes">
+        <h3 class="es subtitulo">Enlaces de Interés </h3>
+        <div    >
+            <a class="img-enlaces-interes" href="https://www.protectoramodepran.com/" title="modepran">
+                <img class="image-size" src="img/Modepran.png"/>
+            </a>
+            <a class="img-enlaces-interes" href="https://www.hospitalveterinarioarchiduque.com/" title="Veterinario">
+               <img class="image-size" src="img/Veterinario2.png"/>
+            </a>
+            <a class="img-enlaces-interes" href="https://www.petmaxx.com/index.aspx?lang=es" title="petmaxx">
+               <img class="image-size" src="img/Petmaxx.png"/>
+            </a>
+            <a class="img-enlaces-interes" href="https://worldpetnet.com/bases-de-datos-animales-mundo" title="worldpetnet">
+                <img class="image-size" src="img/worldpetnet.png"/>
+            </a>
+        </div>
+    </section>
+</main>
+<footer id="footer">
+    <div class="footer-content">
+        <div class="es contact-us">
+            <h2 class="brand">Usuario</h2>
+            <p>contraseña</p>
+        </div>
+        <div class="en contact-us">
+            <h2 class="brand">User</h2>
+            <p>password</p>
+        </div>
+        <div  class="fr contact-us">
+            <h2 class="brand">utilisateur</h2>
+            <p>mot de passe</p>
+        </div>
+        <div>
+            <a href="https://www.facebook.com/jorge.gonzalezsanchezdelablanca.7/" class="social-media-icon">
+                <i class='bx bxl-facebook'></i>
+            </a>
+            <a href="https://twitter.com/Jogosa94" class="social-media-icon">
+                <i class='bx bxl-twitter'></i>
+            </a>
+            <a href="https://www.instagram.com/jogosa17/" class="social-media-icon">
+                <i class='bx bxl-instagram' ></i>
+            </a>
+                <a href="tel:+34960170415" class="social-media-icon">
+                <i class='bx bx-phone-call'></i>
+            </a>
+            <a href="mailto:jorge.gonzalez@solvam.es" class="social-media-icon">
+                <i class='bx bx-envelope' ></i>
+            </a>
+         </div>
+    </div>
+</footer>
+</center>
+</body>
+<script src="js/menu.js"></script>
+<script src="js/lightbox.js"></script>
+</html>
+
