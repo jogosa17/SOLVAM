@@ -27,7 +27,7 @@ else{
     }
 //echo "Connected successfully<br>";
 
-// buscamos en la BD el valor persona asociado al valor gato GUS u otro gato
+// buscamos en la BD el valor persona asociado al valor gato GUS
 $connection->select_db($database);
 $name = $_GET['nombredueño'];//Sintaxis TIPICA PHP
 $sql = "SELECT dueño FROM MASCOTA WHERE nombre='$name'";//Sintaxis tipica MySQL

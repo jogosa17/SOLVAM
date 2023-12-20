@@ -11,8 +11,8 @@ $database="MASCOTAS";
 $mascota = $_GET['mascota'];
 $persona = $_GET['nombredueno'];
 $telefono = $_GET['tel'];
-$existe=0; //las explico más tarde
-$aux=""; //las explico más tarde
+$existe=0;
+$aux="";
 $connection = mysqli_connect($servername, $username, $password, $database);
 if (!$connection) {
     die("Connection failed: " . mysqli_connect_error());
