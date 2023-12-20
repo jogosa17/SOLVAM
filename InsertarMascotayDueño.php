@@ -20,7 +20,7 @@ if (!$connection) {
 }
 else{
     if (($mascota==NULL OR $persona==NULL OR $telefono==NULL)){
-        echo "Te faltan datos, vuelve a introducirlos"<br><form action='consulta.php' method='get'><input type='submit' value='volver'></form>
+        echo "Te faltan datos, vuelve a introducirlos"<br><form action='consulta.php' method='get'><input type='submit' value='volver'></form>;
     }
     else{
         $sql = "INSERT INTO 'mascotas' ('nombre','dueño') VALUES('".$mascota."','".$persona."');";
