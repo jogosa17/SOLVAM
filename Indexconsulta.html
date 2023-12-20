@@ -9,65 +9,80 @@
     <header class="header" id="inicio">
         <div class="es cabecera">
             <h1>¡Ayúdame a volver a casa!</h1>
-            <center><img style="" class="img-perrogato" src="img/perrogato.jpg" alt=""></center>
+            <img style="" class="img-perrogato" src="img/perrogato.jpg" alt="">
         </div>
         <div class="en cabecera">
-            <h1><center>Help me to go back home!</center></h1>
+            <h1>Help me get back home!</h1>
 
-            <center><img style="" class="img-perrogato" src="img/perrogato.jpg" alt=""></center>
+            <img style="" class="img-perrogato" src="img/perrogato.jpg" alt="">
         </div>
         <div class="fr cabecera">
-            <h1>HAS ENCONTRADO UN GATO PERDIDO</h1>
+            <h1>Aide-moi à rentrer à la maison !</h1>
 
            <img style="" class="img-perrogato" src="img/perrogato.jpg" alt="">
         </div>
         <div class="container-form">
             <form action="consulta.php" method="get" name="nombredueño">
-                <div class="es texto">
-                <input type='text' name='nombredueño' placeholder="Introduzca nombre de la mascota y pulse INTRO"/>
-                <input type='submit' value='Buscar'/>
-                </div>
-                <div class="en texto">
-                    <input type='text' name='nombre' placeholder="Insert the pet name and press ENTER"/>
-                    <input type='submit' value='Search'/>
-                </div>
-                <div class="fr texto">
-                    <input type='text' name='nombre' placeholder="Entrez le nom de la mascotte et appuyez sur ENTER"/>
-                    <input type='submit' value='Chercher'/>
+                <div class="searchBox">
+
+                    <input class="searchInput" type="text" name="nombredueño" placeholder="Nombre mascota">
+                    <input type="submit" class="searchButton">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                            <g clip-path="url(#clip0_2_17)">
+                                <g filter="url(#filter0_d_2_17)">
+                                    <path d="M23.7953 23.9182L19.0585 19.1814M19.0585 19.1814C19.8188 18.4211 20.4219 17.5185 20.8333 16.5251C21.2448 15.5318 21.4566 14.4671 21.4566 13.3919C21.4566 12.3167 21.2448 11.252 20.8333 10.2587C20.4219 9.2653 19.8188 8.36271 19.0585 7.60242C18.2982 6.84214 17.3956 6.23905 16.4022 5.82759C15.4089 5.41612 14.3442 5.20435 13.269 5.20435C12.1938 5.20435 11.1291 5.41612 10.1358 5.82759C9.1424 6.23905 8.23981 6.84214 7.47953 7.60242C5.94407 9.13789 5.08145 11.2204 5.08145 13.3919C5.08145 15.5634 5.94407 17.6459 7.47953 19.1814C9.01499 20.7168 11.0975 21.5794 13.269 21.5794C15.4405 21.5794 17.523 20.7168 19.0585 19.1814Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" shape-rendering="crispEdges"></path>
+                                </g>
+                            </g>
+                            <defs>
+                                <filter id="filter0_d_2_17" x="-0.418549" y="3.70435" width="29.7139" height="29.7139" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                                    <feOffset dy="4"></feOffset>
+                                    <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+                                    <feComposite in2="hardAlpha" operator="out"></feComposite>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_17"></feBlend>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_17" result="shape"></feBlend>
+                                </filter>
+                                <clipPath id="clip0_2_17">
+                                    <rect width="28.0702" height="28.0702" fill="white" transform="translate(0.403503 0.526367)"></rect>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </input>
                 </div>
             </form>
         </div>
-    <img style="" class="hamburguer" src="img/huella.png" alt="" onclick="openNav()">
-    <nav id="myMenu" class="menu-navegacion">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="es">
-            <a href="#inicio">Inicio</a>
-            <a href="#subtitulo">¿Qué es RSIAC?</a>
-            <a href="#enlaces-interes">Enlaces de interés</a>
-            <a href="#footer">Contacto</a>
-        </div>
+        <img style="" class="hamburguer" src="img/huella.png" alt="" onclick="openNav()">
+            <nav id="myMenu" class="menu-navegacion">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="es">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#subtitulo">¿Qué es RSIAC?</a>
+                    <a href="#enlaces-interes">Enlaces de interés</a>
+                     <a href="#footer">Contacto</a>
+                </div>
 
-        <div class="en">
-            <a href="#inicio">Menu</a>
-            <a href="#subtitulo">What is RSIAC?</a>
-            <a href="#enlaces-interes">Links of interest</a>
-            <a href="#footer">Contact</a>
-        </div>
+                <div class="en">
+                    <a href="#inicio">Menu</a>
+                    <a href="#subtitulo">What is RSIAC?</a>
+                    <a href="#enlaces-interes">Links of interest</a>
+                    <a href="#footer">Contact</a>
+                </div>
+                <div class="fr">
+                    <a href="#inicio">Accueil</a>
+                    <a href="#subtitulo">Qu’est-ce que le RSIAC?</a>
+                    <a href="#enlaces-interes">Liens d'intérêt</a>
+                    <a href="#footer">Contact</a>
+                </div>
 
-        <div class="fr">
-            <a href="#inicio">Accueil</a>
-            <a href="#subtitulo">Qu’est-ce que le RSIAC?</a>
-            <a href="#enlaces-interes">Liens d'intérêt</a>
-            <a href="#footer">Contact</a>
-        </div>
-
-        <div class="contenedor-idioma">
-            <img class="img-idioma" onclick="changeLenguaje('es')" src="img/esp_band.png" alt="idioma español">
-            <img class="img-idioma" onclick="changeLenguaje('en')" src="img/eng_band.png" alt="idioma inglés">
-            <img class="img-idioma" onclick="changeLenguaje('fr')" src="img/fr_band.png" alt="idioma francés">
-        </div>
-    </nav>
-</header>
+                <div class="contenedor-idioma">
+                    <img class="img-idioma" onclick="changeLenguaje('es')" src="img/esp_band.png" alt="idioma español">
+                    <img class="img-idioma" onclick="changeLenguaje('en')" src="img/eng_band.png" alt="idioma inglés">
+                    <img class="img-idioma" onclick="changeLenguaje('fr')" src="img/fr_band.png" alt="idioma francés">
+                </div>
+            </nav>
+    </header>
 <main id="main">
     <section class="services contenedor" id="subtitulo">
         <h2 class="es subtitulo">¿Qué es RSIAC?</h2>
@@ -118,34 +133,26 @@
         <h3 class="es subtitulo">Enlaces de Interés </h3>
         <div>
             <a class="img-enlaces-interes" href="https://www.protectoramodepran.com/" title="modepran">
-                <img class="image-size" src="img/Modepran.png"/>
+                <img class="image-size" src="img/Modepran.png" alt=""/>
             </a>
             <a class="img-enlaces-interes" href="https://www.hospitalveterinarioarchiduque.com/" title="Veterinario">
-               <img class="image-size" src="img/Veterinario2.png"/>
+               <img class="image-size" src="img/Veterinario2.png" alt=""/>
             </a>
             <a class="img-enlaces-interes" href="https://www.petmaxx.com/index.aspx?lang=es" title="petmaxx">
-               <img class="image-size" src="img/Petmaxx.png"/>
+               <img class="image-size" src="img/Petmaxx.png" alt=""/>
             </a>
             <a class="img-enlaces-interes" href="https://worldpetnet.com/bases-de-datos-animales-mundo" title="worldpetnet">
-                <img class="image-size" src="img/worldpetnet.png"/>
+                <img class="image-size" src="img/worldpetnet.png" alt=""/>
             </a>
         </div>
     </section>
 </main>
 <footer id="footer">
     <div class="footer-content">
-        <div class="es contact-us">
-            <h2 class="brand">Usuario</h2>
-            <p>contraseña</p>
-        </div>
-        <div class="en contact-us">
-            <h2 class="brand">User</h2>
-            <p>password</p>
-        </div>
-        <div  class="fr contact-us">
-            <h2 class="brand">utilisateur</h2>
-            <p>mot de passe</p>
-        </div>
+            <p>
+                <img id="icomap" src="img/iconomapa.png" alt=""/>
+                <a id="textmap" href="https://www.google.es/maps/@39.418032,-0.3966606,3a,75y,3.49h,81.78t/data=!3m7!1e1!3m5!1sSjtISJmMsre01MlJwoHt7A!2e0!5s20230201T000000!7i16384!8i8192?entry=ttu">C/ Celia Antón Romeu, 6 46910 - Benetússer, Valencia</a>
+            </p>
         <div>
             <a href="https://www.facebook.com/jorge.gonzalezsanchezdelablanca.7/" class="social-media-icon">
                 <i class='bx bxl-facebook'></i>
@@ -165,7 +172,6 @@
          </div>
     </div>
 </footer>
-</center>
 </body>
 <script src="js/menu.js"></script>
 <script src="js/lightbox.js"></script>

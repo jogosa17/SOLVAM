@@ -2,7 +2,7 @@ var idioma = "es"
 
 function openNav() {
     document.getElementById("myMenu").style.width = "250px";
-    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    document.body.style.backgroundColor = "rgba(0,0,0,0)";
     document.body.style.marginRight = "250px";
 }
   

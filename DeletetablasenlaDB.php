@@ -19,10 +19,10 @@ if ($connection->query($sql)===TRUE){
     echo "Error al eliminar la Tabla Gatos";
 }
 // CrearTablaPersonas
-$sql="DROP TABLE Personas";
+$sql="DROP TABLE Dueño";
 if ($connection->query($sql)===TRUE){
-    echo "Tabla Personas eliminada";
+    echo "Tabla Dueño eliminada";
 } else{
-    echo "Error al eliminar la Tabla Personas";
+    echo "Error al eliminar la Tabla Dueño";
 }
 ?>

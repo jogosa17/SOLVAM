@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .header {
     /* trabajamos imagen de la chica: tamaño, transparencia y ajuste a la pantalla */
     height: 100vh;
@@ -18,7 +19,7 @@ body{
     font-family: Brush Script MT;
     color: #000000;
     font-size: large;
-    background-color: white;
+    background: white;
 }
 
 
@@ -100,7 +101,7 @@ body{
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: rgba(255, 250, 250, 0.592);
+    background-color: lightslategrey;
     overflow-x: hidden;
     transition: 0.3s;
     padding-top: 60px;
@@ -112,7 +113,7 @@ body{
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #4e2e06;
+    color: black;
     display: block;
     transition: 0.3s;
 
@@ -142,8 +143,10 @@ body{
     padding-top: 30px;
 }
 .container-form{
-    padding-bottom: 100px;
-    text-align: center;
+    display: block;
+    margin: 0 auto;
+    width: 220px;
+    padding-top: 20px;
 }
   
   @media screen and (max-height: 450px) {
@@ -312,9 +315,55 @@ body{
     margin-top: 30px;
     margin-block: 20px;
     margin: 30px;
-
-
 }
+.searchBox {
+    display: flex;
+    max-width: 230px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    background: #4e2e06;
+    border-radius: 50px;
+    position: relative;
+    text-align: center;
+}
+
+.searchButton {
+    color: #ffffff;
+    position: absolute;
+    right: 8px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--gradient-2, linear-gradient(90deg, #f56905 0%, #eeff00 100%));
+    border: 0;
+    display: inline-block;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+/*hover effect*/
+button:hover {
+    color: #303245FF;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 10px 20px;
+    transform: translateY(-3px);
+}
+/*button pressing effect*/
+button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.searchInput {
+    border: none;
+    background: none;
+    outline: none;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 24px 46px 24px 26px;
+    text-align: left;
+}
+
+
 .image-size{
     width: 17%;
     height: 100px;
@@ -383,6 +432,7 @@ footer{
 .social-media-icon{
     display: inline-block;
     margin-left: 20px;
+    margin-right: 20px;
     width: 60px;
     height: 60px;
     border: 1px solid #fff;
@@ -427,6 +477,18 @@ footer{
 .social-media-icon:hover{
     background: #fff;
     color:#4e2e06;
+}
+#icomap{
+    width: 30px;
+    height: 30px;
+}
+#textmap{
+    color: #3e8e41;
+    font-size: 24px;
+    width: 20px;
+    height: 20px;
+
+
 }
 
 .en ,.fr{
@@ -487,16 +549,6 @@ body-registrar-mascota {
     height: 10vh;
 }
 
-.form {
-    background-color: transparent;
-    border-radius: 20px;
-    box-sizing: border-box;
-    height: 200px;
-    margin-left: 10px;
-    padding: 20px;
-    width: 200px;
-}
-
 .title {
     color: black;
     font-family: sans-serif;
@@ -522,10 +574,7 @@ body-registrar-mascota {
 .ic1 {
     margin-top: 10px;
 }
-
-.ic2 {
-    margin-top: 10px;
-}
+y
 
 .input {
     background-color: #303245;
@@ -603,4 +652,10 @@ body-registrar-mascota {
 
 .submit:active {
     background-color: darkorange;
+}
+.formulario{
+    width: 200px;
+    height: 200px;
+    text-align: left;
+
 }

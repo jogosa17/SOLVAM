@@ -16,14 +16,14 @@ $sql="CREATE TABLE MASCOTA (nombre VARCHAR(20),raza VARCHAR(20), dueño VARCHAR(
 if ($connection->query($sql)===TRUE){
     echo "Tabla Mascota creada";
 } else{
-    echo "Error al crear la Tabla Gatos";
+    echo "Error al crear la Tabla Mascota";
 }
 // CrearTablaPersonas
 $connection->select_db($database);
-$sql="CREATE TABLE DUEÑO (nombre VARCHAR(20), telefono INT)";
+$sql="CREATE TABLE DUEÑO (dueño VARCHAR(20), telefono INT)";
 if ($connection->query($sql)===TRUE){
-    echo "Tabla Personas creada";
+    echo "Tabla Dueño creada";
 } else{
-    echo "Error al crear la Tabla Personas";
+    echo "Error al crear la Tabla Dueño";
 }
 ?>
