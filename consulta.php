@@ -1,9 +1,3 @@
-
-
-
-
-
-
 <html>
 <head>
     <meta charset="UTF-8">
@@ -56,9 +50,11 @@
          ahora se entiende que si el gato no existe, ese $row sera siempre un elemento nulo (OJO, nulo no significa VACIO por lo que no entra en el while)
          dicho de otro modo: si entra en el while sólo pasa una vez por el, porque siempre hay un campo 'persona' aunque sea vacío*/
 
+        $listaPropietarios = array();
         while ($row = mysqli_fetch_assoc($result)){
             $aux=$row['Propietario'];//podríamos prescindir de esa var $aux, es por mayor claridad y comodidad
             if($aux!=""){
+                array_push($listaPropietarios, $aux);
                 $existe++;//Pongo esa variable a 1 para indicar que he pasado por el while, es decir, el gato existe
             }
         }
@@ -89,13 +85,17 @@
         // contemplamos ahora el caso de que exista gato con Propietario para visualizar telefono
 
         if($aux!="" && $existe!=0){
-            $sql = "SELECT telefono FROM Propietario WHERE propietario='$aux'";
-            $result= mysqli_query($connection, $sql);//MISMA explicación que para la anterior consulta
-            while ($row = mysqli_fetch_assoc($result)){
-                $aux2=$row['telefono'];
-                if($aux2!=""){
-                    echo " El teléfono de ".$aux." es ".$row['telefono'];}
+            foreach ($listaPropietarios as $prop) {
+                $sql = "SELECT telefono FROM Propietario WHERE propietario='$prop'";
+                $result= mysqli_query($connection, $sql);//MISMA explicación que para la anterior consulta
+                while ($row = mysqli_fetch_assoc($result)){
+                    $aux2=$row['telefono'];
+                    if($aux2!=""){
+                        echo " El teléfono de ".$prop." es ".$row['telefono']."<br>";}
+                }
             }
+
+            echo "<a HREF='http://localhost/SOLVAM/RegistrarMascota.html'>Dar de alta nuevo Propietario</a>";
         }
         ?>
     </div>
