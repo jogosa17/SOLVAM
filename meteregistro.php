@@ -21,7 +21,7 @@ if ($connection->query($sql)===TRUE){
 }
 // CrearRegistrosPruebaenTablaPersonas
 $connection->select_db($database);
-$sql = "INSERT INTO Dueño VALUES ('Carlos','612345678')";
+$sql = "INSERT INTO Propietario VALUES ('Carlos','612345678')";
 if ($connection->query($sql)===TRUE){
     echo "registro 2 creado";
 } else{

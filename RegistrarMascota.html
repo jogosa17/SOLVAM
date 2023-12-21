@@ -16,20 +16,25 @@
         </div>
 
         <div class="fr cabecera">
-            <h1><center>Enregistrement des Mascottes</center></h1>
+            <h1>Enregistrement des Mascottes</h1>
         </div>
         <div>
-        <form class="formulario" action="consulta.php" method="get" name="nombredueno">
+        <form class="formulario" action="InsertarMascotayDueño.php" method="get" name="formularioRegistro">
             <div class="title">Dar de alta</div>
                 <div class="input-container ic1">
-                    <input name="mascota" id="Mascota" class="input" type="text" placeholder=" " />
+                    <input  name="mascota" id="Mascota" class="input" type="text" placeholder=" " />
                     <div class="cut"></div>
                     <label for="Mascota" class="placeholder">Nombre mascota</label>
                 </div>
+            <div class="input-container ic1">
+                <input name="raza" id="Raza" class="input" type="text" placeholder=" " />
+                <div class="cut"></div>
+                <label for="Raza" class="placeholder">Raza</label>
+            </div>
                 <div class="input-container ic1">
-                    <input name="dueño" id="Dueño" class="input" type="text" placeholder=" " />
+                    <input name="propietario" id="Propietario" class="input" type="text" placeholder=" " />
                     <div class="cut"></div>
-                    <label for="Dueño"class="placeholder">Nombre dueño</label>
+                    <label for="Propietario"class="placeholder">Nombre Propietario</label>
                 </div>
                 <div class="input-container ic1">
                     <input name="tel" id="telephone" class="input" type="text" placeholder=" " />

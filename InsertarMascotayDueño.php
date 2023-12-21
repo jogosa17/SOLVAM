@@ -8,30 +8,36 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 $database="MASCOTAS";
+
+//Obtener datos desde el formulario del HTML
 $mascota = $_GET['mascota'];
-$persona = $_GET['nombre'];
 $raza = $_GET['raza'];
+$propietario = $_GET['propietario'];
 $telefono = $_GET['tel'];
+
 $existe=0; //las explico más tarde
 $aux=""; //las explico más tarde
+
 $connection = mysqli_connect($servername, $username, $password, $database);
 if (!$connection) {
     die("Connection failed: " . mysqli_connect_error());
 }
 else{
-    if (($mascota==NULL OR $persona==NULL OR $telefono==NULL)){
-        echo "Te faltan datos, vuelve a introducirlos"<br><form action='consulta.php' method='get'><input type='submit' value='volver'></form>;
+    if (($mascota==NULL OR $raza==NULL OR $propietario==NULL OR $telefono==NULL)){
+        echo "Te faltan datos, vuelve a introducirlos <br> <form action='RegistrarMascota.php' method='get'> <input type='submit' value='volver'> </form> ";
     }
     else{
-        $sql = "INSERT INTO 'mascotas' ('nombre','dueño') VALUES('".$mascota."','".$persona."');";
-    }
-//echo "Connected successfully<br>";
+        $connection->select_db($database);
+        // Insertar mascota
+        $sql = "INSERT INTO Mascota (nombre, raza ,propietario) VALUES ('".$mascota."','".$raza."','".$propietario."');";
+        $result= mysqli_query($connection, $sql); //lo mismo que hacíamos con el $connection->query($sql) pero con sintaxis sqli
+        echo " Se ha insertado ".$mascota." correctamente! <br>";
 
-// buscamos en la BD el valor persona asociado al valor gato GUS
-$connection->select_db($database);
-$name = $_GET['nombredueño'];//Sintaxis TIPICA PHP
-$sql = "SELECT dueño FROM MASCOTA WHERE nombre='$name'";//Sintaxis tipica MySQL
-$result= mysqli_query($connection, $sql); //lo mismo que hacíamos con el $connection->query($sql) pero con sintaxis sqli
+        //Insertar Propietario
+        $sql = "INSERT INTO Propietario (propietario, telefono) VALUES('".$propietario."','".$telefono."');";
+        $result= mysqli_query($connection, $sql); //lo mismo que hacíamos con el $connection->query($sql) pero con sintaxis sqli
+        echo " Se ha insertado ".$propietario." correctamente! <br>";
+    }
 
 }
 ?>
