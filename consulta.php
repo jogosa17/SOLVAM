@@ -45,11 +45,6 @@
         $result= mysqli_query($connection, $sql); //lo mismo que hacíamos con el $connection->query($sql) pero con sintaxis sqli
 
 
-        /* Buscamos en la DB el Propietario de ese gato pero ojo si el gato NO existe no entra en el siguiente while porque ese $result=0
-         Es complejo explicar sin pizarra ese while,y ese $row, baste decir que si la query resultó correcta, en ese $row se almacena el campo 'persona' aunque esté vacío,
-         ahora se entiende que si el gato no existe, ese $row sera siempre un elemento nulo (OJO, nulo no significa VACIO por lo que no entra en el while)
-         dicho de otro modo: si entra en el while sólo pasa una vez por el, porque siempre hay un campo 'persona' aunque sea vacío*/
-
         $listaPropietarios = array();
         while ($row = mysqli_fetch_assoc($result)){
             $aux=$row['Propietario'];//podríamos prescindir de esa var $aux, es por mayor claridad y comodidad
