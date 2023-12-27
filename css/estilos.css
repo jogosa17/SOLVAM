@@ -476,7 +476,6 @@ body {
     border-radius: 50px;
     position: relative;
     text-align: center;
-    text
 
 }
 
@@ -697,7 +696,7 @@ footer{
 }
 body-registrar-mascota {
     align-items: center;
-    background-color: #000;
+    background-color: transparent;
     display: flex;
     justify-content: center;
     height: 10vh;
@@ -706,9 +705,9 @@ body-registrar-mascota {
 .title {
     color: black;
     font-family: sans-serif;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 600;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .subtitle {
@@ -727,10 +726,9 @@ body-registrar-mascota {
 .ic1 {
     margin-top: 10px;
 }
-y
 
 .input {
-    background-color: #303245;
+    background-color: darkorange;
     border-radius: 12px;
     border: 0;
     box-sizing: border-box;
@@ -738,8 +736,9 @@ y
     font-size: 18px;
     height: 50%;
     outline: 0;
-    padding: 10px 0px ;
+    padding: 25px 25px 25px 25px ;
     width: 100%;
+    margin-left: 15px;
 }
 
 .cut {
@@ -801,6 +800,7 @@ y
 // outline: 0;
     text-align: center;
     width: 100%;
+    margin-left: 20px;
 }
 
 .submit:active {
@@ -809,7 +809,8 @@ y
 .formulario{
     width: 200px;
     height: 200px;
-    text-align: left;
+    text-align: center;
+
 }
 
 .logoFaltanDatos{
